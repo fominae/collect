@@ -80,4 +80,19 @@ class Collect
         array_splice($idx, $length);
         return $this;
     }
+
+    public function last()
+    {
+        return $this->array[array_key_last($this->array)];
+    }
+
+    public function keys(): array
+    {
+        return array_keys($this->array);
+    }
+
+    public function values(): array
+    {
+        return array_values($this->array);
+    }
 }
